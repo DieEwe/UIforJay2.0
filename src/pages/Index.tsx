@@ -83,7 +83,7 @@ const Index = () => {
           opacity: 1,
           y: 0
         }} className="rounded-2xl aspect-square flex flex-col items-center justify-center group hover:scale-105 transition-transform cursor-pointer">
-            <img alt="JobSync Piece" className="w-full h-full object-contain" src="/lovable-uploads/a51175e0-a866-4dd5-8eba-b71c9e7b0db7.png" />
+            <img alt="JobSync Piece" className="w-full h-full object-contain" src="/lovable-uploads/345d60db-753b-4d8e-b412-32e8fd45758c.png" />
           </motion.div>
           
           {/* Empty Application Card */}
