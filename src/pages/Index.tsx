@@ -52,7 +52,7 @@ const Index = () => {
         </nav>
 
         {/* Theme Toggle */}
-        <button onClick={() => setIsDarkMode(!isDarkMode)} className="w-10 h-10 rounded-lg bg-orange-400 hover:bg-orange-500 transition-colors flex items-center justify-center">
+        <button onClick={() => setIsDarkMode(!isDarkMode)} className="w-10 h-10 rounded-lg transition-colors flex items-center justify-center bg-[ffc470ff] bg-[#ffc470] text-slate-950">
           <Sun className="w-5 h-5 text-white" />
         </button>
       </aside>
