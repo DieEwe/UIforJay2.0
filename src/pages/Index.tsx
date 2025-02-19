@@ -1,10 +1,11 @@
 
 import { useState } from "react";
-import { User, Search, LayoutDashboard, Settings, Star, LogOut } from "lucide-react";
+import { User, Search, LayoutDashboard, Settings, Star, LogOut, Sun } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   return (
     <div className="min-h-screen flex">
@@ -66,6 +67,14 @@ const Index = () => {
             </li>
           </ul>
         </nav>
+
+        {/* Theme Toggle */}
+        <button 
+          onClick={() => setIsDarkMode(!isDarkMode)}
+          className="w-10 h-10 rounded-lg bg-orange-400 hover:bg-orange-500 transition-colors flex items-center justify-center"
+        >
+          <Sun className="w-5 h-5 text-white" />
+        </button>
       </aside>
 
       {/* Main Content */}
