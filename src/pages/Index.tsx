@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { User, Search, LayoutDashboard, Settings, Star, LogOut, Sun, Menu } from "lucide-react";
 import { motion } from "framer-motion";
@@ -19,7 +18,7 @@ const Index = () => {
           <Menu className="w-6 h-6" />
         </button>
         <img 
-          src="/lovable-uploads/9d0e5bb4-ef8c-45d0-a96f-de1785ae0a73.png" 
+          src="/images/InkluLogo.svg" 
           alt="Logo" 
           className="w-10 h-10 object-contain"
         />
@@ -32,7 +31,7 @@ const Index = () => {
         {/* Logo (hidden on mobile) */}
         <div className="hidden md:flex items-center gap-2">
           <img 
-            src="/lovable-uploads/9d0e5bb4-ef8c-45d0-a96f-de1785ae0a73.png" 
+            src="/images/InkluLogo.svg" 
             alt="Logo" 
             className="w-16 h-16 object-contain"
           />
@@ -107,29 +106,44 @@ const Index = () => {
         </div>
 
         {/* Applications Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          <motion.div initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} className="rounded-2xl aspect-square flex flex-col items-center justify-center group hover:scale-105 transition-transform cursor-pointer">
-            <img alt="JobSync Piece" className="w-full h-full object-contain" src="/lovable-uploads/345d60db-753b-4d8e-b412-32e8fd45758c.png" />
-          </motion.div>
-          
-          {/* Empty Application Card */}
-          <motion.div initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          delay: 0.1
-        }} className="rounded-2xl aspect-square flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
-            <img src="/lovable-uploads/7e3b3893-0383-42f2-ac7d-b6528caa010d.png" alt="Empty Piece" className="w-full h-full object-contain" />
-          </motion.div>
+        <div className="max-w-[1200px] lg:mx-0 mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  justify-items-center lg:justify-items-start">
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} className="rounded-2xl h-[180px] max-w-[200px]  flex flex-col items-center justify-center group hover:scale-105 transition-transform cursor-pointer">
+              <img alt="JobSync Piece" className="w-full h-full object-contain" src="/images/JobSync.svg" />
+            </motion.div>
+            
+            {/* Empty Application Card */}
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            delay: 0.1
+          }} className="rounded-2xl h-[180px] max-w-[200px]  flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
+              <img src="/images/emptyApp.svg" alt="Empty Piece" className="w-full h-full object-contain" />
+            </motion.div>
+
+            {/* Third Empty Application Card */}
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            delay: 0.2
+          }} className="rounded-2xl h-[180px] max-w-[200px]  flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
+              <img src="/images/emptyApp.svg" alt="Empty Piece" className="w-full h-full object-contain" />
+            </motion.div>
+          </div>
         </div>
       </main>
 
