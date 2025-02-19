@@ -12,10 +12,11 @@ const Index = () => {
       <aside className="w-[240px] bg-navy-light p-6 flex flex-col gap-8">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="flex">
-            <div className="w-8 h-8 bg-coral rounded-lg"></div>
-            <div className="w-8 h-8 bg-blue-400 rounded-lg -ml-2"></div>
-          </div>
+          <img 
+            src="/lovable-uploads/9d0e5bb4-ef8c-45d0-a96f-de1785ae0a73.png" 
+            alt="Logo" 
+            className="w-16 h-16 object-contain"
+          />
         </div>
 
         {/* User Profile */}
@@ -95,15 +96,13 @@ const Index = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-slate-200 rounded-2xl p-6 aspect-square flex flex-col items-center justify-center group hover:scale-105 transition-transform cursor-pointer"
+            className="rounded-2xl aspect-square flex flex-col items-center justify-center group hover:scale-105 transition-transform cursor-pointer"
           >
-            <div className="text-coral text-xl font-semibold mb-2">JobSync</div>
-            <div className="relative w-12 h-12">
-              <div className="absolute inset-0 flex">
-                <div className="w-6 h-6 bg-coral rounded"></div>
-                <div className="w-6 h-6 bg-coral rounded -ml-1"></div>
-              </div>
-            </div>
+            <img 
+              src="/lovable-uploads/f2726f64-f23a-4d46-96b0-8d29b08272ee.png" 
+              alt="JobSync Piece" 
+              className="w-full h-full object-contain"
+            />
           </motion.div>
           
           {/* Empty Application Card */}
@@ -111,8 +110,14 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="bg-slate-200 rounded-2xl aspect-square flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
-          ></motion.div>
+            className="rounded-2xl aspect-square flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
+          >
+            <img 
+              src="/lovable-uploads/7e3b3893-0383-42f2-ac7d-b6528caa010d.png" 
+              alt="Empty Piece" 
+              className="w-full h-full object-contain"
+            />
+          </motion.div>
         </div>
       </main>
     </div>
