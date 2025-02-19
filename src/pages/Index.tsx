@@ -68,7 +68,7 @@ const Index = () => {
               <Search className="w-5 h-5 text-slate-400 absolute left-3 top-1/2 transform -translate-y-1/2" />
               <input type="text" placeholder="Search something..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)} className="pl-10 pr-4 py-2 bg-navy-light rounded-lg border border-slate-700 focus:outline-none focus:border-slate-600 transition-colors w-[250px]" />
             </div>
-            <button className="px-4 py-2 bg-orange-400 hover:bg-orange-500 transition-colors rounded-lg font-medium bg-[ffc470ff]">
+            <button className="px-4 py-2 transition-colors rounded-lg font-medium bg-[ffc470ff] bg-[#ffc470] text-zinc-950">
               Logout
             </button>
           </div>
