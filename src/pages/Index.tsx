@@ -28,7 +28,7 @@ const Index = () => {
       {/* Sidebar */}
       <aside className={`${
         isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-      } md:translate-x-0 fixed md:relative top-0 left-0 h-full w-[240px] bg-navy-light p-6 flex flex-col gap-8 transition-transform duration-300 z-50`}>
+      } md:translate-x-0 fixed md:relative top-0 left-0 h-screen w-[240px] bg-navy-light p-6 flex flex-col gap-8 transition-transform duration-300 z-50`}>
         {/* Logo (hidden on mobile) */}
         <div className="hidden md:flex items-center gap-2">
           <img 
